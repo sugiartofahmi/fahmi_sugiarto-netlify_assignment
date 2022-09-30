@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "320px",
+            md: "1080px",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="h-screen w-screen sm:text-xl text-base bg-[#816797]">
+    <header
+      class="sticky w-full flex flex-col sm:flex-row gap-2 justify-center sm:justify-between px-10 py-0 sm:h-[20vh] font-bold items-center bg-[#1B2430] h-[15vh] text-[#816797]"
+    >
+      <figure class="">
+        <figcaption>Fahmi Sugiarto</figcaption>
+      </figure>
+      <nav>
+        <ul class="flex flex-row gap-5">
+          <li class="hover:text-[#D6D5A8]"><a href="#home">Home</a></li>
+          <li class="hover:text-[#D6D5A8]">
+            <a href="#certificate">Certificate</a>
+          </li>
+          <li class="hover:text-[#D6D5A8]"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="bg-[#816797] h-screen items-center justify-center px-10">
+      <section
+        id="home"
+        class="bg-[#816797] h-screen flex items-center justify-between gap-10"
+      >
+        <div class="w-3/5">
+          <h1 class="text-2xl font-bold">Im <br />Fahmi Sugiarto</h1>
+          <p class="text-xl">
+            I am an informatics engineering student who likes the world of
+            technology, one of which is in the field of web development
+          </p>
+        </div>
+        <div class="w-2/5">
+          <img
+            src="./img/my-foto.jpg"
+            alt="My Foto"
+            class="object-cover w-[70vh] rounded-xl"
+          />
+        </div>
+      </section>
+      <section
+        id="certificate"
+        class="bg-[#816797] h-screen flex flex-col items-center justify-around gap-10"
+      >
+        <h1 class="text-2xl font-bold">My Certificate</h1>
+        <div class="flex flex-row gap-10">
+          <div
+            class="max-w-sm rounded-lg border shadow-md bg-[#1B2430] border-gray-700"
+          >
+            <img class="rounded-t-lg" src="./img/html-css.png" alt="" />
+
+            <div class="p-5">
+              <h5 class="mb-2 text-xl font-bold dark:text-white">
+                Certificate HTML CSS
+              </h5>
+
+              <a
+                href="https://progate.com/course_certificate/0a304f7cqhxj0c"
+                target="_blank"
+                class="inline-flex items-center py-2 px-3 text-sm font-medium text-center bg-[#816797] rounded-lg text-black"
+              >
+                Read more
+              </a>
+            </div>
+          </div>
+          <div
+            class="max-w-sm rounded-lg border shadow-md bg-[#1B2430] border-gray-700"
+          >
+            <img class="rounded-t-lg" src="./img/comman-line.png" alt="" />
+
+            <div class="p-5">
+              <h5
+                class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Certificate Command Line
+              </h5>
+
+              <a
+                href="https://progate.com/course_certificate/502ed64bqp1bu7"
+                target="_blank"
+                class="inline-flex items-center py-2 px-3 text-sm font-medium text-center bg-[#816797] rounded-lg text-black"
+              >
+                Read more
+              </a>
+            </div>
+          </div>
+          <div
+            class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+          >
+            <img class="rounded-t-lg" src="./img/git.png" alt="" />
+
+            <div class="p-5">
+              <h5
+                class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Certificate GIT
+              </h5>
+
+              <a
+                href="https://progate.com/course_certificate/7b5f2f4brinu0j"
+                target="_blank"
+                class="inline-flex items-center py-2 px-3 text-sm font-medium text-center bg-[#816797] rounded-lg text-black"
+              >
+                Read more
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="bg-[#816797] h-screen flex flex-col gap-y-5 items-center justify-center"
+      >
+        <h1 class="text-2xl font-bold">Contact Me</h1>
+        <form
+          class="bg-[#1B2430] border-gray-700 shadow-xl border-3 rounded px-8 pt-6 pb-8 mb-4"
+        >
+          <div class="mb-4">
+            <label
+              class="block text-white text-sm font-bold mb-2"
+              for="fullname"
+            >
+              Name
+            </label>
+            <input
+              class="shadow appearance-none border text-base rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Input Name"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-white text-sm font-bold mb-2" for="Email">
+              Email
+            </label>
+            <input
+              class="shadow appearance-none border text-base rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Input Email"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              class="block text-white text-sm font-bold mb-2"
+              for="Message"
+            >
+              Message
+            </label>
+            <textarea
+              class="shadow appearance-none border text-base rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
+              placeholder="Input Message"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <button
+              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center bg-[#816797] rounded-lg text-black"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
